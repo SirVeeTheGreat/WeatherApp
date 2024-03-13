@@ -32,7 +32,7 @@ namespace WeatherApp.Services.Implementations
                 if (lat.HasValue && lon.HasValue)
                 {
                     HttpResponseMessage response = await _client.GetAsync(
-                        $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=2f65f2b2d61e10bd5c793afc0c705538&units=metric");
+                        $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=&units=metric");
                     response.EnsureSuccessStatusCode();
                     var responseBody = await response
                         .Content
