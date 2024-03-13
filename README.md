@@ -1,4 +1,4 @@
-Weather App
+# Weather App
 
 Welcome to the Weather App, a Blazor Server application built on .NET 8.
 
